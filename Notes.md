@@ -20,9 +20,14 @@ DATABASE_URL="postgresql://<username>:<password>@<host>:<port>/<database>"
 
 In your code, you can use the Prisma Client to interact with your database. The Prisma Client is a TypeScript library that allows you to write queries and mutations directly in your JavaScript code.
 
+```bash
+npm i prisma @prisma/client
+```
+
 - create your generator block in prisma file
 - create your model in generator file.
 - Prisma client is useful for ==giving suggestion== of functions(like findUnique, update etc.) & already created fields of a DB schema during writing code.4
+- Prisma client responsible for talking to db.
 
 ## Prisma Migrations
 
@@ -54,3 +59,6 @@ This command will format your Prisma schema file.
 - Planet scale, Aiven are the alternative of Neon for using postgres.
 - Prisma automatically connects with DB we just need to provide DB's URL & DB type.
 - In prisma cuid is useful for creating primary key.
+
+## ==Pending task==
+- Read Express docs -> API ref -> Read about(Req, Res & Router)
